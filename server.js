@@ -9,11 +9,13 @@ const cors = require('cors');
 const knex = require('knex')({
     client: 'pg',
     connection: {
-      host: '127.0.0.1',
+      connectionString: 'postgresql://face_recognition_db_w77g_user:tNZhfKYw5WEAldZIUeOmBYSRA2AF8T4o@dpg-cruj87btq21c738jp0t0-a/face_recognition_db_w77g',
+      ssl: { rejectUnauthorized: false },
+      host: 'dpg-cruj87btq21c738jp0t0-a',
       port: 5432,
-      user: 'postgres',
-      password: 'test',
-      database: 'smart-brain',
+      user: 'face_recognition_db_w77g_user',
+      password: 'tNZhfKYw5WEAldZIUeOmBYSRA2AF8T4o',
+      database: 'face_recognition_db_w77g',
     },
   });
 
